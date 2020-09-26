@@ -1,0 +1,190 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+ }
+
+.navbar {
+    height: 10vh;
+}
+
+ul {
+    height: 10vh;
+    width: 100%;
+    background: rgb(19, 18, 17);
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    padding: 0;
+    margin: 0;
+}
+
+.indexlink {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    grid-column: 1/2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: gainsboro;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    user-select: none;
+    list-style: none;
+}
+
+.linklist {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 1em;
+    color: whitesmoke;
+    font-family: 'Anton', sans-serif;
+}
+    .a{grid-column: 4/5;}
+    .b{grid-column: 5/6;}
+    .c{grid-column: 6/7;}
+    .d{grid-column: 9/10;} 
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.signup {
+    background: transparent;
+    border: none;
+    color: rgb(153, 143, 143);   
+    font-family: 'Anton', sans-serif;
+    cursor: pointer;
+}
+
+.signup:hover {
+    color: white;
+    transition-duration: 300ms;
+}
+
+section {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/4088009/pexels-photo-4088009.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+
+h1 {
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.content {
+    background-color:  gainsboro;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.labelinputs {
+    width: 75%;
+    max-width: 500px;
+}
+
+.labelinputs p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.labelinputs p label{
+    padding-bottom: 5px;
+}
+
+.labelinputs input {
+    height: 30px;
+    width: auto;
+    border: none;
+    border-radius: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.logbutton {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+}
+
+.linkregister {
+    color: rgb(153, 143, 143);  
+    font-size: 12px; 
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+
+.linkregister:hover {
+    color:black;
+    transition-duration: 300ms;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .navbar {
+        display: none;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    ul {
+        display: none;
+    }
+    
+    .indexlink {
+        display: none;
+    }
+    
+    .linklist {
+        display: none;
+    }
+    
+    .link {
+        display: none;
+    }
+    
+    .signup {
+        display: none;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+    .content {
+        width: 100%;
+        height: 70%;
+        border-radius: 0;
+    }
+}

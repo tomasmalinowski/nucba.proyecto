@@ -1,0 +1,248 @@
+body, html {
+    margin: 0;
+    padding: 0;
+ }
+
+header {
+    height: 10vh;
+}
+ ul {
+    height: 10vh;
+    width: 100%;
+    background: rgb(19, 18, 17);
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    padding: 0;
+    margin: 0;
+}
+
+.indexlink {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    grid-column: 1/2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: gainsboro;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    user-select: none;
+    list-style: none;
+}
+
+.linklist {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 1em;
+    color: whitesmoke;
+    font-family: 'Anton', sans-serif;
+}
+    .a{grid-column: 4/5;}
+    .b{grid-column: 5/6;}
+    .c{grid-column: 6/7;}
+    .d{grid-column: 9/10;} 
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.signup {
+    background: transparent;
+    border:rgb(153, 143, 143);
+    color: rgb(153, 143, 143);   
+    font-family: 'Anton', sans-serif;
+    cursor: pointer;
+}
+
+.signup:hover {
+    color: white;
+    border: white;
+    transition-duration: 300ms;
+}
+
+.portada {
+    width: 100%;
+    height: 90vh;
+    background-image: url(https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.info {
+    background:  rgb(211, 211, 191);
+}
+
+.whoweare {
+    padding-top: 20px;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+}
+
+.ondotcross {
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.weare {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.sectionlibrerias {
+    background-color: rgb(211, 211, 191);
+}
+
+.libraries {
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.divlibrerias { 
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    width: 360px;
+    height: 260px;
+    background-repeat: no-repeat;
+    position: relative;
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+
+.virtualinstrumentscard {
+    background-image: url(vsts.jpg); 
+}
+
+.equalizerscard {
+    background-image: url(eqs.png);
+}
+
+.dynamicscard {
+    background-image: url(dynamics.png);
+}
+
+.picfoot {
+    background-color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 20%;
+    width: 100%;
+}
+
+.picfoot:hover {
+    background-color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 20%;
+    width: 100%;
+}
+
+.sectioncontact {
+    background-color: rgb(211, 211, 191);
+}
+
+.divcontact {
+    display: flexbox;
+}
+
+.contact {
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    display: flex;
+}
+
+.contactform {
+    margin-left: 20vh;
+    padding-bottom: 20px;
+    margin-bottom: 40vh;    
+}
+
+.writeus {
+    width: 500px;
+    height: 100px;
+}
+.forms {
+    margin-bottom: 40px;
+}
+
+form p label {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+.footer {
+    margin: 0;
+    width: 100%;
+    height: 75px;
+    background-color:  rgb(19, 18, 17);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.social {
+    text-align: center;
+}
+
+.acote {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+    ul {
+        display: inline-block;
+    }
+
+    .d{
+        display: none;
+    }
+
+    .signup {
+        display: none;
+    }
+
+    .divlibrerias {
+        display: inline-block;
+    }
+
+    .writeus {
+        width: 85vh;
+    }
+}
